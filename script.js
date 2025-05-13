@@ -122,3 +122,7 @@ function copyAddress() {
         feedback.remove();
     }, 1500);
 }
+
+<button onclick="window.location.href='https://pump.fun/'" class="cta-button primary-cta">
+    Buy Now
+</button>
