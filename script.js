@@ -92,15 +92,15 @@ document.addEventListener('click', (e) => {
     }
 });
 
-document.querySelectorAll('.cta-button').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        gtag('event', 'click', {
-            'event_category': 'CTA',
-            'event_label': this.textContent.trim()
-        });
+// document.querySelectorAll('.cta-button').forEach(btn => {
+//     btn.addEventListener('click', function(e) {
+//         gtag('event', 'click', {
+//             'event_category': 'CTA',
+//             'event_label': this.textContent.trim()
+//         });
         
-    });
-});
+//     });
+// });
 
 function copyAddress() {
     const address = document.getElementById('contractAddress');
