@@ -1043,6 +1043,16 @@ img {
     z-index: 2; 
 }
     }
+
+.cta-button {
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+}
     
     .pie-chart {
         max-width: 280px;
