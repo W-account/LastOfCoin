@@ -92,13 +92,13 @@ document.addEventListener('click', (e) => {
     }
 });
 
-
-document.querySelectorAll('a[href^="#"], .cta-button').forEach(btn => {
-    btn.addEventListener('click', () => {
+document.querySelectorAll('.cta-button').forEach(btn => {
+    btn.addEventListener('click', function(e) {
         gtag('event', 'click', {
             'event_category': 'CTA',
-            'event_label': btn.textContent.trim()
+            'event_label': this.textContent.trim()
         });
+        
     });
 });
 
@@ -123,6 +123,4 @@ function copyAddress() {
     }, 1500);
 }
 
-<button onclick="window.location.href='https://pump.fun/'" class="cta-button primary-cta">
-    Buy Now
-</button>
+
